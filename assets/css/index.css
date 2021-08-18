@@ -1,0 +1,951 @@
+@import url("http://fonts.cdnfonts.com/css/walrus");
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body p {
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  max-width: 2120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 54px 20px;
+}
+
+body header.opened #open {
+  display: none;
+}
+
+body header.opened #close {
+  display: block !important;
+}
+
+body header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .menu ul li {
+  margin: 0 60px;
+}
+
+body header .menu ul li a {
+  font-size: 40px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  text-transform: uppercase;
+  line-height: 4.346;
+  text-decoration: none;
+  position: relative;
+}
+
+body header .menu ul li.active a::before {
+  content: "";
+  position: absolute;
+  width: 180%;
+  height: 7px;
+  background-color: #008bff;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body header #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  background: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+body header #menu #close {
+  display: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body header #menu #open {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body .banner {
+  position: relative;
+}
+
+body .banner video {
+  width: 100%;
+}
+
+body .banner .title {
+  top: 66px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .banner .title span:first-child {
+  font-size: 130px;
+  font-family: "Walrus";
+  font-weight: 700;
+  color: white;
+  font-weight: bold;
+  line-height: 0.717;
+  text-align: center;
+}
+
+body .banner .title span:last-child {
+  font-size: 240px;
+  font-family: "Walrus";
+  font-weight: 700;
+  color: #008bff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 2384px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body .advantage .item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+}
+
+body .advantage .item img {
+  margin-bottom: 80px;
+}
+
+body .advantage .item .name {
+  font-size: 90px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  position: relative;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+body .advantage .item .name::before {
+  content: "";
+  width: 160px;
+  height: 4px;
+  background-color: #008bff;
+  bottom: -35px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .advantage .item .description {
+  font-size: 37.5px;
+  font-family: "PT Sans";
+  color: #9297a3;
+  line-height: 1.2;
+  text-align: center;
+}
+
+body .explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .explore > div:first-child {
+  width: 60%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body .explore > div:first-child img {
+  width: 100%;
+}
+
+body .explore .detail {
+  padding-top: 345px;
+  width: 100%;
+  max-width: 990px;
+}
+
+body .explore .detail .title {
+  font-size: 90px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  line-height: 1.071;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+body .explore .detail .title::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 4px;
+  background-color: #008bff;
+  left: 0;
+  bottom: -12px;
+}
+
+body .explore .detail .description {
+  font-size: 37.5px;
+  font-family: "PT Sans";
+  color: #9297a3;
+  margin-bottom: 70px;
+}
+
+body .explore .detail button {
+  border: 4px solid #008bff;
+  border-radius: 52px;
+  background-color: black;
+  width: 370px;
+  height: 100px;
+  font-size: 37.5px;
+  font-family: "PT Sans";
+  color: white;
+  line-height: 1.2;
+}
+
+body .roadmap {
+  position: relative;
+}
+
+body .roadmap > img {
+  width: 100%;
+}
+
+body .roadmap > div {
+  position: absolute;
+  width: 100%;
+  max-width: 2444px;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .roadmap > div .title {
+  font-size: 240px;
+  font-family: "Walrus";
+  color: #008bff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.717;
+  text-align: center;
+  margin-bottom: 215px;
+}
+
+body .roadmap > div .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .roadmap > div .content .item {
+  background-color: #121212;
+  margin: 0 30px;
+  padding: 40px 40px 70px;
+}
+
+body .roadmap > div .content .item .name {
+  font-size: 90px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  line-height: 1.071;
+  text-align: center;
+  position: relative;
+  margin-bottom: 95px;
+}
+
+body .roadmap > div .content .item .name::after {
+  width: 160px;
+  height: 4px;
+  background-color: #008bff;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .roadmap > div .content .item .description {
+  font-size: 37.5px;
+  font-family: "PT Sans";
+  color: #9297a3;
+  line-height: 1.2;
+  text-align: center;
+}
+
+body .roadmap > div .crypto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 750px;
+}
+
+body footer {
+  background-color: #008bff;
+}
+
+body footer > div {
+  width: 100%;
+  max-width: 2500px;
+  padding: 65px 20px 120px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer > div > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer > div > div:first-child > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 360px;
+}
+
+body footer > div > div:first-child > div img {
+  margin-bottom: 16px;
+}
+
+body footer > div > div:first-child > div span {
+  font-size: 27px;
+  font-family: "PT Sans";
+  color: white;
+  line-height: 1.308;
+}
+
+body footer > div > div:first-child ul {
+  margin: 0;
+  padding: 0;
+}
+
+body footer > div > div:first-child ul li {
+  list-style: none;
+}
+
+body footer > div > div:first-child ul li a {
+  font-size: 41px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.95;
+  text-decoration: none;
+}
+
+body footer > div > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer > div > div:last-child ul {
+  margin-right: 120px;
+}
+
+body footer > div > div:last-child ul li {
+  list-style: none;
+}
+
+body footer > div > div:last-child ul li a {
+  position: relative;
+  font-size: 37.5px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  line-height: 2.167;
+  padding-left: 80px;
+  text-decoration: none;
+}
+
+body footer > div > div:last-child ul li a img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+body footer > div > div:last-child div p {
+  font-size: 42px;
+  font-family: "PT Sans Narrow";
+  color: white;
+  line-height: 1.95;
+  margin-bottom: 44px;
+  margin-top: 15px;
+}
+
+body footer > div > div:last-child div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 580px;
+  height: 115px;
+  border: 2px solid #dfe0e4;
+  border-radius: 6px;
+}
+
+body footer > div > div:last-child div div input {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0 24px;
+  font-size: 34px;
+  font-family: "PT Sans";
+  color: white;
+}
+
+body footer > div > div:last-child div div input::-webkit-input-placeholder {
+  color: white;
+}
+
+body footer > div > div:last-child div div input:-ms-input-placeholder {
+  color: white;
+}
+
+body footer > div > div:last-child div div input::-ms-input-placeholder {
+  color: white;
+}
+
+body footer > div > div:last-child div div input::placeholder {
+  color: white;
+}
+
+body footer > div > div:last-child div div button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 115px;
+  height: 100%;
+  border: none;
+  border-left: 2px solid #dfe0e4;
+  background: none;
+}
+
+@media (max-width: 1920px) {
+  body header {
+    max-width: 1356px;
+    padding: 35px 20px !important;
+  }
+  body header .logo img {
+    width: 145px;
+  }
+  body header .menu ul li {
+    margin: 0 35px;
+  }
+  body header .menu ul li a {
+    font-size: 25px;
+  }
+  body header .menu ul li.active a::before {
+    height: 4px;
+    bottom: -12px;
+  }
+  body .banner .title span:first-child {
+    font-size: 80px;
+  }
+  body .banner .title span:last-child {
+    font-size: 132px;
+  }
+  body .advantage {
+    max-width: 1520px;
+  }
+  body .advantage .item {
+    padding: 0 45px;
+  }
+  body .advantage .item img {
+    margin-bottom: 50px;
+    height: 124px;
+  }
+  body .advantage .item .name {
+    font-size: 57px;
+    margin-bottom: 70px;
+  }
+  body .advantage .item .name::before {
+    width: 102px;
+    height: 2.5px;
+    bottom: -22.5px;
+  }
+  body .advantage .item .description {
+    font-size: 24px;
+  }
+  body .explore .detail {
+    padding-top: 220px;
+    max-width: 620px;
+  }
+  body .explore .detail .title {
+    font-size: 57px;
+    margin-bottom: 52px;
+  }
+  body .explore .detail .title::after {
+    width: 102px;
+    height: 2.5px;
+    bottom: -7.5px;
+  }
+  body .explore .detail .description {
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+  body .explore .detail button {
+    border: 2.5px solid #008bff;
+    width: 237px;
+    height: 64px;
+    font-size: 24px;
+  }
+  body .roadmap > div {
+    max-width: 1560px;
+  }
+  body .roadmap > div .title {
+    font-size: 154px;
+    margin-bottom: 137px;
+  }
+  body .roadmap > div .content .item {
+    margin: 0 20px;
+    padding: 25px 25px 40px;
+  }
+  body .roadmap > div .content .item .name {
+    font-size: 57px;
+    margin-bottom: 60px;
+  }
+  body .roadmap > div .content .item .name::after {
+    width: 102px;
+    height: 2.5px;
+    bottom: -16px;
+  }
+  body .roadmap > div .content .item .description {
+    font-size: 24px;
+  }
+  body .roadmap > div .crypto {
+    margin-top: 400px;
+  }
+  body .roadmap > div .crypto img {
+    width: 222px;
+  }
+  body footer > div {
+    width: 100%;
+    max-width: 1560px;
+    padding: 40px 20px 70px;
+  }
+  body footer > div > div:first-child > div {
+    margin-right: 230px;
+  }
+  body footer > div > div:first-child > div img {
+    width: 140px;
+    margin-bottom: 16px;
+  }
+  body footer > div > div:first-child > div span {
+    font-size: 17px;
+  }
+  body footer > div > div:first-child ul li a {
+    font-size: 25px;
+  }
+  body footer > div > div:last-child ul {
+    margin-right: 70px;
+  }
+  body footer > div > div:last-child ul li a {
+    font-size: 24px;
+    padding-left: 50px;
+  }
+  body footer > div > div:last-child ul li a img {
+    height: 25px;
+  }
+  body footer > div > div:last-child div p {
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  body footer > div > div:last-child div div {
+    width: 370px;
+    height: 75px;
+  }
+  body footer > div > div:last-child div div input {
+    padding: 0 15px;
+    font-size: 21px;
+  }
+  body footer > div > div:last-child div div button {
+    width: 75px;
+  }
+  body footer > div > div:last-child div div button img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 1600px) {
+  body header .logo img {
+    width: 100px;
+  }
+  body header .menu ul li {
+    margin: 0 20px;
+  }
+  body header .menu ul li a {
+    font-size: 20px;
+  }
+  body header .menu ul li.active a::before {
+    height: 2.5px;
+    bottom: -8px;
+  }
+  body .banner .title {
+    width: 100%;
+  }
+  body .banner .title span:first-child {
+    font-size: 50px;
+  }
+  body .banner .title span:last-child {
+    font-size: 100px;
+  }
+  body .advantage .item {
+    padding: 0 30px;
+  }
+  body .advantage .item img {
+    margin-bottom: 30px;
+    height: 80px;
+  }
+  body .advantage .item .name {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  body .advantage .item .name::before {
+    width: 70px;
+    height: 2.5px;
+    bottom: -15px;
+  }
+  body .advantage .item .description {
+    font-size: 16px;
+  }
+  body .explore .detail {
+    padding-top: 220px;
+    max-width: 620px;
+  }
+  body .explore .detail .title {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  body .explore .detail .title br {
+    display: none;
+  }
+  body .explore .detail .title::after {
+    width: 70px;
+    height: 2.5px;
+    bottom: -12px;
+  }
+  body .explore .detail .description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  body .explore .detail button {
+    border: 2.5px solid #008bff;
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+  }
+  body .roadmap > div .title {
+    font-size: 100px;
+    margin-bottom: 70px;
+  }
+  body .roadmap > div .content .item .name {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  body .roadmap > div .content .item .name::after {
+    width: 102px;
+    height: 2.5px;
+    bottom: -16px;
+  }
+  body .roadmap > div .content .item .description {
+    font-size: 18px;
+  }
+  body .roadmap > div .crypto {
+    padding: 0 20px;
+    margin-top: 400px;
+  }
+  body .roadmap > div .crypto img {
+    width: 120px;
+  }
+  body footer > div {
+    width: 100%;
+    max-width: 1560px;
+    padding: 40px 20px 70px;
+  }
+  body footer > div > div:first-child > div {
+    margin-right: 230px;
+  }
+  body footer > div > div:first-child > div img {
+    margin-bottom: 16px;
+  }
+  body footer > div > div:first-child > div span {
+    font-size: 17px;
+  }
+  body footer > div > div:first-child ul li a {
+    font-size: 25px;
+  }
+  body footer > div > div:last-child ul {
+    margin-right: 70px;
+  }
+  body footer > div > div:last-child ul li a {
+    font-size: 24px;
+    padding-left: 50px;
+  }
+  body footer > div > div:last-child div p {
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  body footer > div > div:last-child div div {
+    width: 370px;
+    height: 75px;
+  }
+  body footer > div > div:last-child div div input {
+    padding: 0 15px;
+    font-size: 21px;
+  }
+  body footer > div > div:last-child div div button {
+    width: 75px;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .explore .detail {
+    padding-top: 80px;
+    padding-right: 20px;
+  }
+  body .roadmap > div .crypto {
+    margin-top: 200px;
+  }
+  body footer > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer > div > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer > div > div:first-child > div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  body footer > div > div:first-child > div span br {
+    display: none;
+  }
+  body footer > div > div:first-child ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer > div > div:last-child ul {
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+  }
+  body footer > div > div:last-child ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer > div > div:last-child div p {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 912px) {
+  body .roadmap > div .crypto {
+    margin-top: 50px;
+  }
+  body .roadmap > div .crypto img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+  header .logo img {
+    width: 80px !important;
+  }
+  header .menu {
+    display: none;
+  }
+  header.opened .menu {
+    position: absolute;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background: #000;
+    z-index: 10;
+  }
+  header.opened .menu ul {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header.opened .menu ul li {
+    text-align: center;
+  }
+  header.opened .menu ul li a {
+    line-height: 3;
+  }
+  .banner video {
+    height: 500px;
+  }
+  .banner .title span:first-child {
+    font-size: 32px !important;
+  }
+  .banner .title span:last-child {
+    font-size: 50px !important;
+  }
+  .advantage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantage .item {
+    margin-bottom: 30px;
+  }
+  .explore > div:first-child {
+    width: 100% !important;
+  }
+  .explore > div:first-child img {
+    min-height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .explore .detail {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .roadmap > img {
+    min-height: 1200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .roadmap .title {
+    font-size: 50px !important;
+  }
+  .roadmap > div .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .roadmap > div .content .item {
+    margin: 0 20px 20px !important;
+  }
+  .roadmap > div .content .item .name {
+    font-size: 30px !important;
+  }
+  .roadmap > div .crypto img {
+    width: 50px !important;
+  }
+  footer > div > div:last-child div > div {
+    width: 100% !important;
+    height: 50px !important;
+  }
+  footer > div > div:last-child div > div button {
+    width: 50px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

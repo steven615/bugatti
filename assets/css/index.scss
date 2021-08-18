@@ -1,0 +1,1082 @@
+@import url("http://fonts.cdnfonts.com/css/walrus");
+
+body {
+  background-color: #000;
+  margin: 0;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  header {
+    width: 100%;
+    max-width: 2120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 54px 20px;
+
+    &.opened {
+      #open {
+        display: none;
+      }
+
+      #close {
+        display: block !important;
+      }
+    }
+
+    .menu {
+      ul {
+        display: flex;
+
+        li {
+          margin: 0 60px;
+
+          a {
+            font-size: 40px;
+            font-family: "PT Sans Narrow";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 4.346;
+            text-decoration: none;
+            position: relative;
+          }
+
+          &.active {
+            a::before {
+              content: "";
+              position: absolute;
+              width: 180%;
+              height: 7px;
+              background-color: #008bff;
+              bottom: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+
+    #menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      background: none;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+
+      #close {
+        display: none;
+        transform: scale(1.2);
+      }
+
+      #open {
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  .banner {
+    position: relative;
+
+    video {
+      width: 100%;
+    }
+
+    .title {
+      top: 66px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      span {
+        &:first-child {
+          font-size: 130px;
+          font-family: "Walrus";
+          font-weight: 700;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          line-height: 0.717;
+          text-align: center;
+        }
+
+        &:last-child {
+          font-size: 240px;
+          font-family: "Walrus";
+          font-weight: 700;
+          color: rgb(0, 139, 255);
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .advantage {
+    display: flex;
+    width: 100%;
+    max-width: 2384px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    .item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 70px;
+
+      img {
+        margin-bottom: 80px;
+      }
+
+      .name {
+        font-size: 90px;
+        font-family: "PT Sans Narrow";
+        color: rgb(255, 255, 255);
+        position: relative;
+        margin-bottom: 110px;
+        text-align: center;
+
+        &::before {
+          content: "";
+          width: 160px;
+          height: 4px;
+          background-color: #008bff;
+          bottom: -35px;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+
+      .description {
+        font-size: 37.5px;
+        font-family: "PT Sans";
+        color: rgb(146, 151, 163);
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
+
+  .explore {
+    display: flex;
+
+    & > div {
+      &:first-child {
+        width: 60%;
+        flex-shrink: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .detail {
+      padding-top: 345px;
+      width: 100%;
+      max-width: 990px;
+
+      .title {
+        font-size: 90px;
+        font-family: "PT Sans Narrow";
+        color: rgb(255, 255, 255);
+        line-height: 1.071;
+        position: relative;
+        margin-bottom: 80px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 160px;
+          height: 4px;
+          background-color: #008bff;
+          left: 0;
+          bottom: -12px;
+        }
+      }
+
+      .description {
+        font-size: 37.5px;
+        font-family: "PT Sans";
+        color: rgb(146, 151, 163);
+        margin-bottom: 70px;
+      }
+
+      button {
+        border: 4px solid rgb(0, 139, 255);
+        border-radius: 52px;
+        background-color: rgb(0, 0, 0);
+        width: 370px;
+        height: 100px;
+        font-size: 37.5px;
+        font-family: "PT Sans";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .roadmap {
+    position: relative;
+
+    & > img {
+      width: 100%;
+    }
+
+    & > div {
+      position: absolute;
+      width: 100%;
+      max-width: 2444px;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .title {
+        font-size: 240px;
+        font-family: "Walrus";
+        color: rgb(0, 139, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.717;
+        text-align: center;
+        margin-bottom: 215px;
+      }
+
+      .content {
+        display: flex;
+
+        .item {
+          background-color: #121212;
+          margin: 0 30px;
+          padding: 40px 40px 70px;
+
+          .name {
+            font-size: 90px;
+            font-family: "PT Sans Narrow";
+            color: rgb(255, 255, 255);
+            line-height: 1.071;
+            text-align: center;
+            position: relative;
+            margin-bottom: 95px;
+
+            &::after {
+              width: 160px;
+              height: 4px;
+              background-color: #008bff;
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: -25px;
+              transform: translateX(-50%);
+            }
+          }
+
+          .description {
+            font-size: 37.5px;
+            font-family: "PT Sans";
+            color: rgb(146, 151, 163);
+            line-height: 1.2;
+            text-align: center;
+          }
+        }
+      }
+
+      .crypto {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 750px;
+      }
+    }
+  }
+
+  footer {
+    background-color: #008bff;
+    & > div {
+      width: 100%;
+      max-width: 2500px;
+      padding: 65px 20px 120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        &:first-child {
+          display: flex;
+
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 360px;
+
+            img {
+              margin-bottom: 16px;
+            }
+
+            span {
+              font-size: 27px;
+              font-family: "PT Sans";
+              color: rgb(255, 255, 255);
+              line-height: 1.308;
+            }
+          }
+
+          ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+              list-style: none;
+
+              a {
+                font-size: 41px;
+                font-family: "PT Sans Narrow";
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                line-height: 1.95;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        &:last-child {
+          display: flex;
+
+          ul {
+            margin-right: 120px;
+            li {
+              list-style: none;
+
+              a {
+                position: relative;
+                font-size: 37.5px;
+                font-family: "PT Sans Narrow";
+                color: rgb(255, 255, 255);
+                line-height: 2.167;
+                padding-left: 80px;
+                text-decoration: none;
+
+                img {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 0;
+                }
+              }
+            }
+          }
+
+          div {
+            p {
+              font-size: 42px;
+              font-family: "PT Sans Narrow";
+              color: rgb(255, 255, 255);
+              line-height: 1.95;
+              margin-bottom: 44px;
+              margin-top: 15px;
+            }
+
+            div {
+              display: flex;
+              width: 580px;
+              height: 115px;
+              border: 2px solid rgb(223, 224, 228);
+              border-radius: 6px;
+
+              input {
+                width: 100%;
+                border: none;
+                background: none;
+                padding: 0 24px;
+                font-size: 34px;
+                font-family: "PT Sans";
+                color: rgb(255, 255, 255);
+
+                &::placeholder {
+                  color: rgb(255, 255, 255);
+                }
+              }
+
+              button {
+                flex-shrink: 0;
+                width: 115px;
+                height: 100%;
+                border: none;
+                border-left: 2px solid rgb(223, 224, 228);
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  body {
+    header {
+      max-width: 1356px;
+      padding: 35px 20px !important;
+
+      .logo {
+        img {
+          width: 145px;
+        }
+      }
+
+      .menu {
+        ul {
+          li {
+            margin: 0 35px;
+
+            a {
+              font-size: 25px;
+            }
+
+            &.active {
+              a::before {
+                height: 4px;
+                bottom: -12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .banner {
+      .title {
+        span {
+          &:first-child {
+            font-size: 80px;
+          }
+
+          &:last-child {
+            font-size: 132px;
+          }
+        }
+      }
+    }
+
+    .advantage {
+      max-width: 1520px;
+
+      .item {
+        padding: 0 45px;
+
+        img {
+          margin-bottom: 50px;
+          height: 124px;
+        }
+
+        .name {
+          font-size: 57px;
+          margin-bottom: 70px;
+
+          &::before {
+            width: 102px;
+            height: 2.5px;
+            bottom: -22.5px;
+          }
+        }
+
+        .description {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .explore {
+      .detail {
+        padding-top: 220px;
+        max-width: 620px;
+
+        .title {
+          font-size: 57px;
+          margin-bottom: 52px;
+
+          &::after {
+            width: 102px;
+            height: 2.5px;
+            bottom: -7.5px;
+          }
+        }
+
+        .description {
+          font-size: 24px;
+          margin-bottom: 45px;
+        }
+
+        button {
+          border: 2.5px solid rgb(0, 139, 255);
+          width: 237px;
+          height: 64px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .roadmap {
+      & > div {
+        max-width: 1560px;
+
+        .title {
+          font-size: 154px;
+          margin-bottom: 137px;
+        }
+
+        .content {
+          .item {
+            margin: 0 20px;
+            padding: 25px 25px 40px;
+
+            .name {
+              font-size: 57px;
+              margin-bottom: 60px;
+
+              &::after {
+                width: 102px;
+                height: 2.5px;
+                bottom: -16px;
+              }
+            }
+
+            .description {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .crypto {
+          margin-top: 400px;
+
+          img {
+            width: 222px;
+          }
+        }
+      }
+    }
+
+    footer {
+      & > div {
+        width: 100%;
+        max-width: 1560px;
+        padding: 40px 20px 70px;
+
+        & > div {
+          &:first-child {
+            & > div {
+              margin-right: 230px;
+
+              img {
+                width: 140px;
+                margin-bottom: 16px;
+              }
+
+              span {
+                font-size: 17px;
+              }
+            }
+
+            ul {
+              li {
+                a {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+          &:last-child {
+            ul {
+              margin-right: 70px;
+              li {
+                a {
+                  font-size: 24px;
+                  padding-left: 50px;
+
+                  img {
+                    height: 25px;
+                  }
+                }
+              }
+            }
+
+            div {
+              p {
+                font-size: 25px;
+                margin-bottom: 25px;
+                margin-top: 10px;
+              }
+
+              div {
+                width: 370px;
+                height: 75px;
+
+                input {
+                  padding: 0 15px;
+                  font-size: 21px;
+                }
+
+                button {
+                  width: 75px;
+
+                  img {
+                    width: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  body {
+    header {
+      .logo {
+        img {
+          width: 100px;
+        }
+      }
+
+      .menu {
+        ul {
+          li {
+            margin: 0 20px;
+
+            a {
+              font-size: 20px;
+            }
+
+            &.active {
+              a::before {
+                height: 2.5px;
+                bottom: -8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .banner {
+      .title {
+        width: 100%;
+
+        span {
+          &:first-child {
+            font-size: 50px;
+          }
+
+          &:last-child {
+            font-size: 100px;
+          }
+        }
+      }
+    }
+
+    .advantage {
+      .item {
+        padding: 0 30px;
+
+        img {
+          margin-bottom: 30px;
+          height: 80px;
+        }
+
+        .name {
+          font-size: 36px;
+          margin-bottom: 40px;
+
+          &::before {
+            width: 70px;
+            height: 2.5px;
+            bottom: -15px;
+          }
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .explore {
+      .detail {
+        padding-top: 220px;
+        max-width: 620px;
+
+        .title {
+          font-size: 35px;
+          margin-bottom: 40px;
+
+          br {
+            display: none;
+          }
+
+          &::after {
+            width: 70px;
+            height: 2.5px;
+            bottom: -12px;
+          }
+        }
+
+        .description {
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+
+        button {
+          border: 2.5px solid rgb(0, 139, 255);
+          width: 180px;
+          height: 45px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .roadmap {
+      & > div {
+        .title {
+          font-size: 100px;
+          margin-bottom: 70px;
+        }
+
+        .content {
+          .item {
+            .name {
+              font-size: 40px;
+              margin-bottom: 40px;
+
+              &::after {
+                width: 102px;
+                height: 2.5px;
+                bottom: -16px;
+              }
+            }
+
+            .description {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .crypto {
+          padding: 0 20px;
+          margin-top: 400px;
+
+          img {
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    footer {
+      & > div {
+        width: 100%;
+        max-width: 1560px;
+        padding: 40px 20px 70px;
+
+        & > div {
+          &:first-child {
+            & > div {
+              margin-right: 230px;
+
+              img {
+                margin-bottom: 16px;
+              }
+
+              span {
+                font-size: 17px;
+              }
+            }
+
+            ul {
+              li {
+                a {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+          &:last-child {
+            ul {
+              margin-right: 70px;
+              li {
+                a {
+                  font-size: 24px;
+                  padding-left: 50px;
+                }
+              }
+            }
+
+            div {
+              p {
+                font-size: 25px;
+                margin-bottom: 25px;
+                margin-top: 10px;
+              }
+
+              div {
+                width: 370px;
+                height: 75px;
+
+                input {
+                  padding: 0 15px;
+                  font-size: 21px;
+                }
+
+                button {
+                  width: 75px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+    .explore {
+      .detail {
+        padding-top: 80px;
+        padding-right: 20px;
+      }
+    }
+    .roadmap {
+      & > div {
+        .crypto {
+          margin-top: 200px;
+        }
+      }
+    }
+    footer {
+      & > div {
+        flex-direction: column;
+
+        & > div {
+          flex-direction: column;
+          align-items: center;
+
+          &:first-child {
+            & > div {
+              margin-right: 0;
+              margin-bottom: 20px;
+
+              span {
+                br {
+                  display: none;
+                }
+              }
+            }
+
+            ul {
+              li {
+                display: flex;
+                justify-content: center;
+              }
+            }
+          }
+          &:last-child {
+            ul {
+              padding: 0;
+              margin: 0;
+              margin-right: 0;
+
+              li {
+                display: flex;
+                justify-content: center;
+              }
+            }
+
+            div {
+              p {
+                margin-bottom: 12px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 912px) {
+  body {
+    .roadmap {
+      & > div {
+        .crypto {
+          margin-top: 50px;
+          img {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+
+    .logo {
+      img {
+        width: 80px !important;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+    
+    &.opened {
+      .menu {
+        position: absolute;
+        display: flex !important;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background: #000;
+        z-index: 10;
+    
+        ul {
+          width: 100%;
+          padding: 0 !important;
+          margin: 0 !important;
+          flex-direction: column;
+
+          li {
+            text-align: center;
+
+            a {
+              line-height: 3;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    video {
+      height: 500px;
+    }
+
+    .title {
+      span {
+        &:first-child {
+          font-size: 32px !important;
+        }
+        &:last-child {
+          font-size: 50px !important;
+        }
+      }
+    }
+  }
+  .advantage {
+    flex-direction: column;
+
+    .item {
+      margin-bottom: 30px;
+    }
+  }
+
+  .explore {
+    & > div {
+      &:first-child {
+        width: 100% !important;
+
+        img {
+          min-height: 500px;
+          object-fit: cover;
+        }
+      }
+    }
+    .detail {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      max-width: 100% !important;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .roadmap {
+    & > img {
+      min-height: 1200px;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 50px !important;
+    }
+
+    & > div {
+      .content {
+        flex-direction: column;
+
+        .item {
+          margin: 0 20px 20px !important;
+
+          .name {
+            font-size: 30px !important;
+          }
+        }
+      }
+
+      .crypto {
+        img {
+          width: 50px !important;
+        }
+      }
+    }
+  }
+  footer {
+    & > div {
+      & > div {
+        &:last-child {
+          div {
+            & > div {
+              width: 100% !important;
+              height: 50px !important;
+
+              button {
+                width: 50px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
