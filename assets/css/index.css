@@ -864,9 +864,6 @@ body footer > div > div:last-child div div button {
   header {
     position: relative;
   }
-  header .logo img {
-    width: 80px !important;
-  }
   header .menu {
     display: none;
   }
