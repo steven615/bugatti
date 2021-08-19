@@ -671,7 +671,7 @@ body footer > div > div:last-child div div button {
   body header .menu ul li a {
     font-size: 20px;
   }
-  body header .menu ul li.active a::before {
+  body header .menu ul li a a::before {
     height: 2.5px;
     bottom: -8px;
   }
