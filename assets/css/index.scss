@@ -334,118 +334,64 @@ body {
       padding: 65px 20px 120px;
       margin: 0 auto;
       display: flex;
+      align-items: flex-start;
       justify-content: space-between;
 
-      & > div {
-        &:first-child {
-          display: flex;
+      & > img {
+        width: 226px;
+        height: auto;
+        margin-bottom: 16px;
+      }
 
-          & > div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 360px;
+      ul.link {
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+
+          a {
+            font-size: 41px;
+            font-family: "Roboto", sans-serif;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 1.95;
+            text-decoration: none;
+          }
+        }
+      }
+      ul.social {
+        margin: 0;
+        margin-right: 120px;
+
+        li {
+          list-style: none;
+
+          a {
+            position: relative;
+            font-size: 37.5px;
+            font-family: "Roboto", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.167;
+            padding-left: 80px;
+            text-decoration: none;
 
             img {
-              width: 226px;
-              margin-bottom: 16px;
-            }
-
-            span {
-              font-size: 27px;
-              font-family: "Roboto", sans-serif;
-              color: rgb(255, 255, 255);
-              line-height: 1.308;
-            }
-          }
-
-          ul {
-            margin: 0;
-            padding: 0;
-
-            li {
-              list-style: none;
-
-              a {
-                font-size: 41px;
-                font-family: "Roboto", sans-serif;
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                line-height: 1.95;
-                text-decoration: none;
-              }
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0;
             }
           }
         }
-        &:last-child {
-          display: flex;
-
-          ul {
-            margin-right: 120px;
-            li {
-              list-style: none;
-
-              a {
-                position: relative;
-                font-size: 37.5px;
-                font-family: "Roboto", sans-serif;
-                color: rgb(255, 255, 255);
-                line-height: 2.167;
-                padding-left: 80px;
-                text-decoration: none;
-
-                img {
-                  position: absolute;
-                  top: 50%;
-                  transform: translateY(-50%);
-                  left: 0;
-                }
-              }
-            }
-          }
-
-          div {
-            p {
-              font-size: 42px;
-              font-family: "Roboto", sans-serif;
-              color: rgb(255, 255, 255);
-              line-height: 1.95;
-              margin-bottom: 44px;
-              margin-top: 15px;
-            }
-
-            div {
-              display: flex;
-              width: 580px;
-              height: 115px;
-              border: 2px solid rgb(223, 224, 228);
-              border-radius: 6px;
-
-              input {
-                width: 100%;
-                border: none;
-                background: none;
-                padding: 0 24px;
-                font-size: 34px;
-                font-family: "Roboto", sans-serif;
-                color: rgb(255, 255, 255);
-
-                &::placeholder {
-                  color: rgb(255, 255, 255);
-                }
-              }
-
-              button {
-                flex-shrink: 0;
-                width: 115px;
-                height: 100%;
-                border: none;
-                border-left: 2px solid rgb(223, 224, 228);
-                background: none;
-              }
-            }
-          }
-        }
+      }
+      p {
+        font-size: 42px;
+        font-family: "Roboto", sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.95;
+        margin-bottom: 44px;
+        margin-top: 15px;
       }
     }
   }
@@ -599,70 +545,37 @@ body {
         max-width: 1560px;
         padding: 40px 20px 70px;
 
-        & > div {
-          &:first-child {
-            & > div {
-              margin-right: 230px;
+        & > img {
+          width: 200px;
+          margin-bottom: 16px;
+        }
+
+        ul.link {
+          li {
+            a {
+              font-size: 25px;
+            }
+          }
+        }
+
+        ul.social {
+          margin-right: 70px;
+          li {
+            a {
+              font-size: 24px;
+              padding-left: 50px;
 
               img {
-                width: 200px;
-                margin-bottom: 16px;
-              }
-
-              span {
-                font-size: 17px;
-              }
-            }
-
-            ul {
-              li {
-                a {
-                  font-size: 25px;
-                }
+                height: 25px;
               }
             }
           }
-          &:last-child {
-            ul {
-              margin-right: 70px;
-              li {
-                a {
-                  font-size: 24px;
-                  padding-left: 50px;
+        }
 
-                  img {
-                    height: 25px;
-                  }
-                }
-              }
-            }
-
-            div {
-              p {
-                font-size: 25px;
-                margin-bottom: 25px;
-                margin-top: 10px;
-              }
-
-              div {
-                width: 370px;
-                height: 75px;
-
-                input {
-                  padding: 0 15px;
-                  font-size: 21px;
-                }
-
-                button {
-                  width: 75px;
-
-                  img {
-                    width: 20px;
-                  }
-                }
-              }
-            }
-          }
+        p {
+          font-size: 25px;
+          margin-bottom: 25px;
+          margin-top: 10px;
         }
       }
     }
@@ -814,61 +727,30 @@ body {
         max-width: 1560px;
         padding: 40px 20px 70px;
 
-        & > div {
-          &:first-child {
-            & > div {
-              margin-right: 230px;
+        & > img {
+          margin-bottom: 16px;
+        }
 
-              img {
-                margin-bottom: 16px;
-              }
-
-              span {
-                font-size: 17px;
-              }
-            }
-
-            ul {
-              li {
-                a {
-                  font-size: 25px;
-                }
-              }
+        ul.link {
+          li {
+            a {
+              font-size: 25px;
             }
           }
-          &:last-child {
-            ul {
-              margin-right: 70px;
-              li {
-                a {
-                  font-size: 24px;
-                  padding-left: 50px;
-                }
-              }
-            }
-
-            div {
-              p {
-                font-size: 25px;
-                margin-bottom: 25px;
-                margin-top: 10px;
-              }
-
-              div {
-                width: 370px;
-                height: 75px;
-
-                input {
-                  padding: 0 15px;
-                  font-size: 21px;
-                }
-
-                button {
-                  width: 75px;
-                }
-              }
+        }
+        ul.social {
+          margin-right: 70px;
+          li {
+            a {
+              font-size: 24px;
+              padding-left: 50px;
             }
           }
+        }
+        p {
+          font-size: 25px;
+          margin-bottom: 25px;
+          margin-top: 10px;
         }
       }
     }
@@ -893,49 +775,27 @@ body {
     footer {
       & > div {
         flex-direction: column;
+        align-items: center;
 
-        & > div {
-          flex-direction: column;
-          align-items: center;
-
-          &:first-child {
-            & > div {
-              margin-right: 0;
-              margin-bottom: 20px;
-
-              span {
-                br {
-                  display: none;
-                }
-              }
-            }
-
-            ul {
-              li {
-                display: flex;
-                justify-content: center;
-              }
-            }
+        ul.link {
+          li {
+            display: flex;
+            justify-content: center;
           }
-          &:last-child {
-            ul {
-              padding: 0;
-              margin: 0;
-              margin-right: 0;
+        }
+        ul.social {
+          padding: 0;
+          margin: 0;
+          margin-right: 0;
 
-              li {
-                display: flex;
-                justify-content: center;
-              }
-            }
-
-            div {
-              p {
-                margin-bottom: 12px;
-                text-align: center;
-              }
-            }
+          li {
+            display: flex;
+            justify-content: center;
           }
+        }
+        p {
+          margin-bottom: 12px;
+          text-align: center;
         }
       }
     }

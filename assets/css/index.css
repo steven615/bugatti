@@ -372,53 +372,30 @@ body footer > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-body footer > div > div:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body footer > div > div:first-child > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 360px;
-}
-
-body footer > div > div:first-child > div img {
+body footer > div > img {
   width: 226px;
+  height: auto;
   margin-bottom: 16px;
 }
 
-body footer > div > div:first-child > div span {
-  font-size: 27px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  line-height: 1.308;
-}
-
-body footer > div > div:first-child ul {
+body footer > div ul.link {
   margin: 0;
   padding: 0;
 }
 
-body footer > div > div:first-child ul li {
+body footer > div ul.link li {
   list-style: none;
 }
 
-body footer > div > div:first-child ul li a {
+body footer > div ul.link li a {
   font-size: 41px;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -427,21 +404,16 @@ body footer > div > div:first-child ul li a {
   text-decoration: none;
 }
 
-body footer > div > div:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body footer > div > div:last-child ul {
+body footer > div ul.social {
+  margin: 0;
   margin-right: 120px;
 }
 
-body footer > div > div:last-child ul li {
+body footer > div ul.social li {
   list-style: none;
 }
 
-body footer > div > div:last-child ul li a {
+body footer > div ul.social li a {
   position: relative;
   font-size: 37.5px;
   font-family: "Roboto", sans-serif;
@@ -451,7 +423,7 @@ body footer > div > div:last-child ul li a {
   text-decoration: none;
 }
 
-body footer > div > div:last-child ul li a img {
+body footer > div ul.social li a img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -459,59 +431,13 @@ body footer > div > div:last-child ul li a img {
   left: 0;
 }
 
-body footer > div > div:last-child div p {
+body footer > div p {
   font-size: 42px;
   font-family: "Roboto", sans-serif;
   color: white;
   line-height: 1.95;
   margin-bottom: 44px;
   margin-top: 15px;
-}
-
-body footer > div > div:last-child div div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 580px;
-  height: 115px;
-  border: 2px solid #dfe0e4;
-  border-radius: 6px;
-}
-
-body footer > div > div:last-child div div input {
-  width: 100%;
-  border: none;
-  background: none;
-  padding: 0 24px;
-  font-size: 34px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-body footer > div > div:last-child div div input::-webkit-input-placeholder {
-  color: white;
-}
-
-body footer > div > div:last-child div div input:-ms-input-placeholder {
-  color: white;
-}
-
-body footer > div > div:last-child div div input::-ms-input-placeholder {
-  color: white;
-}
-
-body footer > div > div:last-child div div input::placeholder {
-  color: white;
-}
-
-body footer > div > div:last-child div div button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 115px;
-  height: 100%;
-  border: none;
-  border-left: 2px solid #dfe0e4;
-  background: none;
 }
 
 @media (max-width: 1920px) {
@@ -617,47 +543,27 @@ body footer > div > div:last-child div div button {
     max-width: 1560px;
     padding: 40px 20px 70px;
   }
-  body footer > div > div:first-child > div {
-    margin-right: 230px;
-  }
-  body footer > div > div:first-child > div img {
+  body footer > div > img {
     width: 200px;
     margin-bottom: 16px;
   }
-  body footer > div > div:first-child > div span {
-    font-size: 17px;
-  }
-  body footer > div > div:first-child ul li a {
+  body footer > div ul.link li a {
     font-size: 25px;
   }
-  body footer > div > div:last-child ul {
+  body footer > div ul.social {
     margin-right: 70px;
   }
-  body footer > div > div:last-child ul li a {
+  body footer > div ul.social li a {
     font-size: 24px;
     padding-left: 50px;
   }
-  body footer > div > div:last-child ul li a img {
+  body footer > div ul.social li a img {
     height: 25px;
   }
-  body footer > div > div:last-child div p {
+  body footer > div p {
     font-size: 25px;
     margin-bottom: 25px;
     margin-top: 10px;
-  }
-  body footer > div > div:last-child div div {
-    width: 370px;
-    height: 75px;
-  }
-  body footer > div > div:last-child div div input {
-    padding: 0 15px;
-    font-size: 21px;
-  }
-  body footer > div > div:last-child div div button {
-    width: 75px;
-  }
-  body footer > div > div:last-child div div button img {
-    width: 20px;
   }
 }
 
@@ -757,40 +663,23 @@ body footer > div > div:last-child div div button {
     max-width: 1560px;
     padding: 40px 20px 70px;
   }
-  body footer > div > div:first-child > div {
-    margin-right: 230px;
-  }
-  body footer > div > div:first-child > div img {
+  body footer > div > img {
     margin-bottom: 16px;
   }
-  body footer > div > div:first-child > div span {
-    font-size: 17px;
-  }
-  body footer > div > div:first-child ul li a {
+  body footer > div ul.link li a {
     font-size: 25px;
   }
-  body footer > div > div:last-child ul {
+  body footer > div ul.social {
     margin-right: 70px;
   }
-  body footer > div > div:last-child ul li a {
+  body footer > div ul.social li a {
     font-size: 24px;
     padding-left: 50px;
   }
-  body footer > div > div:last-child div p {
+  body footer > div p {
     font-size: 25px;
     margin-bottom: 25px;
     margin-top: 10px;
-  }
-  body footer > div > div:last-child div div {
-    width: 370px;
-    height: 75px;
-  }
-  body footer > div > div:last-child div div input {
-    padding: 0 15px;
-    font-size: 21px;
-  }
-  body footer > div > div:last-child div div button {
-    width: 75px;
   }
 }
 
@@ -807,24 +696,11 @@ body footer > div > div:last-child div div button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  body footer > div > div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  body footer > div > div:first-child > div {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  body footer > div > div:first-child > div span br {
-    display: none;
-  }
-  body footer > div > div:first-child ul li {
+  body footer > div ul.link li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -832,12 +708,12 @@ body footer > div > div:last-child div div button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body footer > div > div:last-child ul {
+  body footer > div ul.social {
     padding: 0;
     margin: 0;
     margin-right: 0;
   }
-  body footer > div > div:last-child ul li {
+  body footer > div ul.social li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,7 +721,7 @@ body footer > div > div:last-child div div button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body footer > div > div:last-child div p {
+  body footer > div p {
     margin-bottom: 12px;
     text-align: center;
   }
