@@ -520,7 +520,7 @@ body footer > div > div:last-child div div button {
     padding: 35px 20px !important;
   }
   body header .logo img {
-    width: 145px;
+    width: 200px;
   }
   body header .menu ul li {
     margin: 0 35px;
@@ -663,7 +663,7 @@ body footer > div > div:last-child div div button {
 
 @media (max-width: 1600px) {
   body header .logo img {
-    width: 100px;
+    width: 160px;
   }
   body header .menu ul li {
     margin: 0 20px;
