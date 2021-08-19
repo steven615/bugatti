@@ -381,7 +381,7 @@ body footer > div {
 }
 
 body footer > div > img {
-  width: 226px;
+  width: 350px;
   height: auto;
   margin-bottom: 16px;
 }
@@ -544,8 +544,9 @@ body footer > div p {
     padding: 40px 20px 70px;
   }
   body footer > div > img {
-    width: 200px;
+    width: 250px;
     margin-bottom: 16px;
+    margin-top: -20px;
   }
   body footer > div ul.link li a {
     font-size: 25px;
