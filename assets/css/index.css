@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/walrus");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
   background-color: #000;
   margin: 0;
@@ -29,6 +29,10 @@ body header {
   padding: 54px 20px;
 }
 
+body header .logo img {
+  width: 226px;
+}
+
 body header.opened #open {
   display: none;
 }
@@ -49,7 +53,7 @@ body header .menu ul li {
 
 body header .menu ul li a {
   font-size: 40px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   text-transform: uppercase;
   line-height: 4.346;
@@ -57,16 +61,26 @@ body header .menu ul li a {
   position: relative;
 }
 
-body header .menu ul li.active a::before {
+body header .menu ul li a::before {
   content: "";
   position: absolute;
-  width: 180%;
+  width: 0;
   height: 7px;
   background-color: #008bff;
   bottom: -20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .menu ul li a:hover::before {
+  width: calc(100% + 50px);
+}
+
+body header .menu ul li.active a::before {
+  width: calc(100% + 50px);
 }
 
 body header #menu {
@@ -97,7 +111,7 @@ body header #menu #open {
 }
 
 body .banner {
-  position: relative;
+  padding-top: 66px;
 }
 
 body .banner video {
@@ -105,11 +119,6 @@ body .banner video {
 }
 
 body .banner .title {
-  top: 66px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +134,7 @@ body .banner .title {
 
 body .banner .title span:first-child {
   font-size: 130px;
-  font-family: "Walrus";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: white;
   font-weight: bold;
@@ -135,10 +144,9 @@ body .banner .title span:first-child {
 
 body .banner .title span:last-child {
   font-size: 240px;
-  font-family: "Walrus";
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   color: #008bff;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -174,7 +182,7 @@ body .advantage .item img {
 
 body .advantage .item .name {
   font-size: 90px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   position: relative;
   margin-bottom: 110px;
@@ -195,7 +203,7 @@ body .advantage .item .name::before {
 
 body .advantage .item .description {
   font-size: 37.5px;
-  font-family: "PT Sans";
+  font-family: "Roboto", sans-serif;
   color: #9297a3;
   line-height: 1.2;
   text-align: center;
@@ -225,7 +233,7 @@ body .explore .detail {
 
 body .explore .detail .title {
   font-size: 90px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   line-height: 1.071;
   position: relative;
@@ -244,7 +252,7 @@ body .explore .detail .title::after {
 
 body .explore .detail .description {
   font-size: 37.5px;
-  font-family: "PT Sans";
+  font-family: "Roboto", sans-serif;
   color: #9297a3;
   margin-bottom: 70px;
 }
@@ -256,20 +264,27 @@ body .explore .detail button {
   width: 370px;
   height: 100px;
   font-size: 37.5px;
-  font-family: "PT Sans";
+  font-family: "Roboto", sans-serif;
   color: white;
   line-height: 1.2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-body .roadmap {
+body .explore .detail button:hover {
+  background-color: #008bff;
+}
+
+body #roadmap {
   position: relative;
 }
 
-body .roadmap > img {
+body #roadmap > img {
   width: 100%;
 }
 
-body .roadmap > div {
+body #roadmap > div {
   position: absolute;
   width: 100%;
   max-width: 2444px;
@@ -279,32 +294,32 @@ body .roadmap > div {
           transform: translateX(-50%);
 }
 
-body .roadmap > div .title {
+body #roadmap > div .title {
   font-size: 240px;
-  font-family: "Walrus";
+  font-family: "Roboto", sans-serif;
   color: #008bff;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 0.717;
   text-align: center;
   margin-bottom: 215px;
 }
 
-body .roadmap > div .content {
+body #roadmap > div .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .roadmap > div .content .item {
+body #roadmap > div .content .item {
   background-color: #121212;
   margin: 0 30px;
   padding: 40px 40px 70px;
 }
 
-body .roadmap > div .content .item .name {
+body #roadmap > div .content .item .name {
   font-size: 90px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   line-height: 1.071;
   text-align: center;
@@ -312,7 +327,7 @@ body .roadmap > div .content .item .name {
   margin-bottom: 95px;
 }
 
-body .roadmap > div .content .item .name::after {
+body #roadmap > div .content .item .name::after {
   width: 160px;
   height: 4px;
   background-color: #008bff;
@@ -324,15 +339,15 @@ body .roadmap > div .content .item .name::after {
           transform: translateX(-50%);
 }
 
-body .roadmap > div .content .item .description {
+body #roadmap > div .content .item .description {
   font-size: 37.5px;
-  font-family: "PT Sans";
+  font-family: "Roboto", sans-serif;
   color: #9297a3;
   line-height: 1.2;
   text-align: center;
 }
 
-body .roadmap > div .crypto {
+body #roadmap > div .crypto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,12 +398,13 @@ body footer > div > div:first-child > div {
 }
 
 body footer > div > div:first-child > div img {
+  width: 226px;
   margin-bottom: 16px;
 }
 
 body footer > div > div:first-child > div span {
   font-size: 27px;
-  font-family: "PT Sans";
+  font-family: "Roboto", sans-serif;
   color: white;
   line-height: 1.308;
 }
@@ -404,7 +420,7 @@ body footer > div > div:first-child ul li {
 
 body footer > div > div:first-child ul li a {
   font-size: 41px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   text-transform: uppercase;
   line-height: 1.95;
@@ -428,7 +444,7 @@ body footer > div > div:last-child ul li {
 body footer > div > div:last-child ul li a {
   position: relative;
   font-size: 37.5px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   line-height: 2.167;
   padding-left: 80px;
@@ -445,7 +461,7 @@ body footer > div > div:last-child ul li a img {
 
 body footer > div > div:last-child div p {
   font-size: 42px;
-  font-family: "PT Sans Narrow";
+  font-family: "Roboto", sans-serif;
   color: white;
   line-height: 1.95;
   margin-bottom: 44px;
@@ -468,7 +484,7 @@ body footer > div > div:last-child div div input {
   background: none;
   padding: 0 24px;
   font-size: 34px;
-  font-family: "PT Sans";
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 
@@ -512,7 +528,7 @@ body footer > div > div:last-child div div button {
   body header .menu ul li a {
     font-size: 25px;
   }
-  body header .menu ul li.active a::before {
+  body header .menu ul li a::before {
     height: 4px;
     bottom: -12px;
   }
@@ -567,33 +583,33 @@ body footer > div > div:last-child div div button {
     height: 64px;
     font-size: 24px;
   }
-  body .roadmap > div {
+  body #roadmap > div {
     max-width: 1560px;
   }
-  body .roadmap > div .title {
+  body #roadmap > div .title {
     font-size: 154px;
     margin-bottom: 137px;
   }
-  body .roadmap > div .content .item {
+  body #roadmap > div .content .item {
     margin: 0 20px;
     padding: 25px 25px 40px;
   }
-  body .roadmap > div .content .item .name {
+  body #roadmap > div .content .item .name {
     font-size: 57px;
     margin-bottom: 60px;
   }
-  body .roadmap > div .content .item .name::after {
+  body #roadmap > div .content .item .name::after {
     width: 102px;
     height: 2.5px;
     bottom: -16px;
   }
-  body .roadmap > div .content .item .description {
+  body #roadmap > div .content .item .description {
     font-size: 24px;
   }
-  body .roadmap > div .crypto {
+  body #roadmap > div .crypto {
     margin-top: 400px;
   }
-  body .roadmap > div .crypto img {
+  body #roadmap > div .crypto img {
     width: 222px;
   }
   body footer > div {
@@ -713,27 +729,27 @@ body footer > div > div:last-child div div button {
     height: 45px;
     font-size: 18px;
   }
-  body .roadmap > div .title {
+  body #roadmap > div .title {
     font-size: 100px;
     margin-bottom: 70px;
   }
-  body .roadmap > div .content .item .name {
+  body #roadmap > div .content .item .name {
     font-size: 40px;
     margin-bottom: 40px;
   }
-  body .roadmap > div .content .item .name::after {
+  body #roadmap > div .content .item .name::after {
     width: 102px;
     height: 2.5px;
     bottom: -16px;
   }
-  body .roadmap > div .content .item .description {
+  body #roadmap > div .content .item .description {
     font-size: 18px;
   }
-  body .roadmap > div .crypto {
+  body #roadmap > div .crypto {
     padding: 0 20px;
     margin-top: 400px;
   }
-  body .roadmap > div .crypto img {
+  body #roadmap > div .crypto img {
     width: 120px;
   }
   body footer > div {
@@ -783,7 +799,7 @@ body footer > div > div:last-child div div button {
     padding-top: 80px;
     padding-right: 20px;
   }
-  body .roadmap > div .crypto {
+  body #roadmap > div .crypto {
     margin-top: 200px;
   }
   body footer > div {
@@ -836,10 +852,10 @@ body footer > div > div:last-child div div button {
 }
 
 @media (max-width: 912px) {
-  body .roadmap > div .crypto {
+  body #roadmap > div .crypto {
     margin-top: 50px;
   }
-  body .roadmap > div .crypto img {
+  body #roadmap > div .crypto img {
     width: 80px;
   }
 }
@@ -920,27 +936,27 @@ body footer > div > div:last-child div div button {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .roadmap > img {
+  #roadmap > img {
     min-height: 1200px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .roadmap .title {
+  #roadmap .title {
     font-size: 50px !important;
   }
-  .roadmap > div .content {
+  #roadmap > div .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .roadmap > div .content .item {
+  #roadmap > div .content .item {
     margin: 0 20px 20px !important;
   }
-  .roadmap > div .content .item .name {
+  #roadmap > div .content .item .name {
     font-size: 30px !important;
   }
-  .roadmap > div .crypto img {
+  #roadmap > div .crypto img {
     width: 50px !important;
   }
   footer > div > div:last-child div > div {
